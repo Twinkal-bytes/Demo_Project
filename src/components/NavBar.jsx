@@ -3,7 +3,7 @@ import { Stack } from '@mui/system'
 import { Link } from 'react-router-dom'
 import {logo} from '../utils/Constants'
 import SearchBar from './SearchBar'
-
+// NavBar To Display search and YouTube logo
 const NavBar = () => (
     <Stack direction="row" 
     alignItems="center" p={2} 
