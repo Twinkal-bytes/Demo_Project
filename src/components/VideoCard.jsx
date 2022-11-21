@@ -7,12 +7,12 @@ import { demoThumbnailUrl ,demoVideoUrl,demoVideoTitle ,demoChannelUrl ,demoChan
 const VideoCard = ({video : {id:{videoId},snippet}}) => {
   // console.log("Calling From Video CArd",videoId,snippet)
   return (
-    <Card style={{width:'17vw', boxShadow:'none',borderRadius:0}}>
+    <Card style={{width:{xs:'100%',sm:'358px',md:'320px'}, boxShadow:'none',borderRadius:0}}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia 
         image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
          alt={snippet?.title}
-         sx={{width:358 , height:180}}/>
+         sx={{width:{xs:'100%', sm:'358px'} , height:180}}/>
       </Link>
       <CardContent sx={{backgroundColor:'#1e1e1e', height:'100px'}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
